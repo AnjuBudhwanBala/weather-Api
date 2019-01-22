@@ -22,4 +22,4 @@ For development,you will only need a text editor which can be ATOM,Sublime or si
 **CSS**
 
 - **style.css** is used to write futureproof CSS for CSS vendor prefix under the hood).
-Autoprefixer is included and use caniuse.com database to avoid outdated prefixes. *You can forget CSS prefixes NOW*.
+Autoprefixer is included and use [caniuse.com](https://caniuse.com/). database to avoid outdated prefixes. *You can forget CSS prefixes NOW*.
