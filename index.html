@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- toggle switch  -->
+    <!-- <div class="switch switch-blue">
+        <input type="radio" class="switch-input" name="temperature" value="metric" id="week2" checked>
+        <label for="week2" class="switch-label switch-label-off">°C</label>
+        <input type="radio" class="switch-input" name="temperature" value="imperial" id="month2">
+        <label for="month2" class="switch-label switch-label-on">°F</label>
+        <span class="switch-selection"></span>
+      </div> -->
+  <div class="weather-data">
+  <header class="header">
+    <form class="search">
+      <input type="text" placeholder="Enter City Name" id="search-txt">
+      <button type="submit" name="button" id="search-btn" >Search</button>
+    </form>
+  </header>
+
+  <main id="main">
+
+    <div class="city-icon">
+      <div class="city-icon-holder">
+      <div id="city-name">
+
+      </div>
+      <img src="" alt="" id="icon">
+        </div>
+    </div>
+
+    <div class="temperature">
+      <div id="temp"></div>
+    </div>
+
+    <div class="humidity">
+      <div id="humidity-div"></div>
+    </div>
+
+  </main>
+
+</div>
+</div>
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+<script type ="module" src ="js/controller.js"></script>
+</body>
+
+</html>

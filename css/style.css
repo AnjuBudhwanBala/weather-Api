@@ -1,0 +1,224 @@
+body {
+  background-color: #796e6e;
+}
+.container {
+}
+.weather-data {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  height: 20%;
+  background-color: #c7bfb3;
+  text-align: center;
+  position: relative;
+}
+
+#temp,
+#humidity-div {
+  font-family: "Courier New";
+  font-weight: bold;
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.city-icon-holder {
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#city-name {
+  font-family: "Courier New";
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#icon {
+  width: 50%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.city-icon {
+  height: 80%;
+  width: 50%;
+  background-color: #a8a59c;
+}
+
+.temperature {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  height: 40%;
+  width: 50%;
+  background-color: #c0b4c3;
+}
+
+.humidity {
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  background-color: rgba(144, 133, 133, 0.39);
+}
+
+#search-btn {
+  display: inline-block;
+  background-color: white;
+  border: none;
+  outline: none;
+  color: #888;
+  padding: 6px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+#search-txt {
+  color: red;
+  height: 30px;
+  border-style: none;
+  outline: none;
+  padding-right: 1px;
+  padding-left: 1px;
+  text-align: center;
+  display: inline-block;
+  width: 40%;
+}
+
+.search {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* toggle temperature css */
+/* .switch {
+  position: relative;
+  height: 26px;
+  width: 120px;
+  margin: 20px auto;
+  background: #e91e63;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 58px;
+  line-height: 26px;
+  font-size: 11px;
+  color:#fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+
+.switch-input {
+  display: none;
+}
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -ms-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: color, text-shadow;
+  -moz-transition-property: color, text-shadow;
+  -ms-transition-property: color, text-shadow;
+  -o-transition-property: color, text-shadow;
+  transition-property: color, text-shadow;
+}
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 60px;
+  /* Note: left: 50%; doesn't transition in WebKit */
+/* } */
+
+/* .switch-selection {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 58px;
+  height: 22px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -ms-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.switch-blue .switch-selection {
+  background-color: #fff;
+
+}
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.on {
+  display: none;
+}
+
+.on,
+.off {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+input:checked + .slider .on {
+  display: block;
+}
+
+input:checked + .slider .off {
+  display: none;
+}  */
