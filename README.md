@@ -1,5 +1,5 @@
 # weather-Api 
-## weather Api for practice using javascript MVC
+## weather Api  using javascript MVC
 
 **Requirements**
 
